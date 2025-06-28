@@ -165,7 +165,7 @@
         }
 
         .current-chord {
-            font-size: 5em;
+            font-size: 4em;
             font-weight: bold;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             animation: pulse 2s ease-in-out infinite;
@@ -307,7 +307,7 @@ D 4"></textarea>
 
         <div class="visualizer" id="visualizer">
             <div class="current-chord" id="currentChord">
-                Ready
+                Start
                 <div class="chord-duration" id="chordDuration"></div>
             </div>
             <div class="next-chord" id="nextChord">Enter chord progression above</div>
@@ -613,7 +613,7 @@ D 4"></textarea>
             }
             
             resetDisplay() {
-                this.currentChordEl.firstChild.textContent = 'Ready';
+                this.currentChordEl.firstChild.textContent = 'Start';
                 this.chordDurationEl.textContent = '';
                 this.nextChordEl.textContent = 'Enter chord progression above';
                 this.progressBar.style.width = '0%';
